@@ -1,0 +1,164 @@
+html {
+    background: #171717;
+    display: table;
+    height: 100%;
+    margin: auto;
+}
+
+body {
+    display: table-row;
+}
+
+body > div {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.hidden {
+    display: none;
+}
+
+.trans {
+    transition: background .4s, color .4s;
+    -webkit-transition: background .4s, color .4s;
+    -ms-transition: background .4s, color .4s;
+    -moz-transition: background .4s, color .4s;
+    -o-transition: background .4s, color .4s;
+}
+
+#message {
+    background: #999;
+    border: solid 1px #000;
+    border-radius: 5px 0 0 5px;
+    border-right: 0;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px #161616;
+    top: 50px;
+    right: -255px;
+    padding: 15px;
+    position: fixed;
+    transition: right .8s;
+    -webkit-transition: right .8s;
+    -ms-transition: right .8s;
+    -moz-transition: right .8s;
+    -o-transition: right .8s;
+    width: 250px;
+    z-index: 1;
+}
+
+#message .title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+#message .message {
+    font-size: 13px;
+}
+
+#clock {
+    background: #171717;
+    border-radius: 50%;
+    height: 0;
+    margin: auto;
+    position: relative;
+    width: 0;
+}
+
+#mark div {
+    background: #888;
+    border-radius: 0 0 50% 50%;
+    display: block;
+    height: 1vh;
+    left: 50%;
+    margin: -.5vh -.2vh;
+    position: absolute;
+    top: 50%;
+    width: .4vh;
+}
+
+#digi div {
+    color: #FFF;
+    display: block;
+    font-size: 3.8vh;
+    font-weight: 300;
+    height: 1vh;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    width: 1vh;
+}
+
+#bg {
+    background-color: #888;
+    border-radius: 50%;
+    height: 6vh;
+    left: 50%;
+    margin: -3vh;
+    position: absolute;
+    top: 50%;
+    width: 6vh;
+}
+
+#hHand {
+    background-color: #446;
+    border-radius: 50% 50% .4vh .4vh;
+    box-shadow: 0 0 0 .18vh #000;
+    height: 20vh;
+    left: 50%;
+    margin: -10vh -.7vh;
+    position: absolute;
+    top: 50%;
+    width: 1.4vh;
+    transform: rotate(0deg) translateY(-5vh);
+    -webkit-transform: rotate(0deg) translateY(-5vh);
+    -ms-transform: rotate(0deg) translateY(-5vh);
+    -moz-transform: rotate(0deg) translateY(-5vh);
+    -o-transform: rotate(0deg) translateY(-5vh);
+}
+
+#mHand {
+    background-color: #446;
+    border-radius: 50% 50% .4vh .4vh;
+    box-shadow: 0 0 0 .18vh #000;
+    height: 24vh;
+    left: 50%;
+    margin: -12vh -.5vh;
+    position: absolute;
+    top: 50%;
+    width: 1vh;
+    transform: rotate(0deg) translateY(-5vh);
+    -webkit-transform: rotate(0deg) translateY(-5vh);
+    -ms-transform: rotate(0deg) translateY(-5vh);
+    -moz-transform: rotate(0deg) translateY(-5vh);
+    -o-transform: rotate(0deg) translateY(-5vh);
+}
+
+#sHand {
+    background-color: #844;
+    border-radius: 50% 50% 0 0;
+    box-shadow: 0 0 0 .18vh #000;
+    height: 30vh;
+    left: 50%;
+    margin: -15vh -.2vh;
+    position: absolute;
+    top: 50%;
+    width: .4vh;
+    transform: rotate(0deg) translateY(-5vh);
+    -webkit-transform: rotate(0deg) translateY(-5vh);
+    -ms-transform: rotate(0deg) translateY(-5vh);
+    -moz-transform: rotate(0deg) translateY(-5vh);
+    -o-transform: rotate(0deg) translateY(-5vh);
+}
+
+#bgTop {
+    background-color: #777;
+    border-radius: 50%;
+    box-shadow: 0 0 0 .2vh #222;
+    height: 3vh;
+    left: 50%;
+    margin: -1.5vh;
+    position: absolute;
+    top: 50%;
+    width: 3vh;
+}
